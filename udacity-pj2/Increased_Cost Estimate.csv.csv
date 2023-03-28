@@ -1,0 +1,24 @@
+Estimate summary								
+Upfront cost	Monthly cost	Total 12 months cost	Currency					
+0	18239.942	218879.3	USD					
+		* Includes upfront cost						
+								
+								
+Detailed Estimate								
+Group hierarchy	Region	Description	Service	Upfront	Monthly	First 12 months total	Currency	Configuration summary
+My Estimate	US East (N. Virginia)		Amazon CloudFront	0	210	2520	USD	"Number of requests (HTTPS) (20000000 per month), Data transfer out to origin (1000 GB per month), Data transfer out to internet (2000 GB per month)"
+My Estimate	US East (N. Virginia)		S3 Standard	0	123	1476	USD	S3 Standard storage (2000 GB per month)
+My Estimate	US East (N. Virginia)		Data Transfer	0	0	0	USD	"DT Inbound: Internet (1 TB per month), DT Outbound: Amazon CloudFront (1 TB per month)"
+My Estimate	US East (N. Virginia)		Application Load Balancer	0	32.43	389.16	USD	Number of Application Load Balancers (1)
+My Estimate	US East (N. Virginia)		Amazon EC2 	0	4643.092	55717.1	USD	"Tenancy (Dedicated Instances), Operating system (Linux), DT Inbound: Internet (1000 GB per month), DT Outbound: Not selected (0 TB per month), DT Intra-Region: (0 GB per month), Workload (Consistent, Number of instances: 4), Enable monitoring (disabled), Advance EC2 instance (m5zn.3xlarge), Pricing strategy (), Snapshot Frequency (No snapshot storage)"
+My Estimate	US East (N. Virginia)		Amazon RDS for MySQL	0	7253.28	87039.36	USD	"Storage for each RDS instance (General Purpose SSD (gp3)), Storage amount (4000 GB), Quantity (1), Instance type (db.m5d.8xlarge), Utilization (On-Demand only) (24 Hours/Day), Deployment option (Multi-AZ (readable standbys)), Pricing strategy (OnDemand), Cost for one month of retention (per vCPU per month) (1.5000000000), Cost for each additional month of retention (per vCPU per month) (0.0631000000), Cost for total retention (per vCPU per month) (2.19), Additional backup storage (0 GB), General Purpose SSD (gp3) - IOPS (12000), General Purpose SSD (gp3) - Throughput (500 MiBps)"
+My Estimate	US East (N. Virginia)		Amazon Elastic IP	0	0.2	2.4	USD	"Number of EC2 instances (2), Number of EIPs per instance (1), Number of EIP remaps (2)"
+My Estimate	US East (N. Virginia)		VPN Connection	0	1444	17328	USD	"Working days per month (30), Number of Site-to-Site VPN Connections (0), Number of subnet associations (4)"
+My Estimate	US East (N. Virginia)		Network Address Translation (NAT) Gateway	0	155.7	1868.4	USD	Number of NAT Gateways (2)
+My Estimate	US East (N. Virginia)		Gateway Load Balancer	0	915.85	10990.2	USD	"Number of Availability Zones that Gateway Load Balancer is deployed to (2), Number of Gateway Load Balancer Endpoints (2), Total processed bytes (2000 GB per month), Average number of new connections/flows (5000 per second), Average connection/flow duration (3600 seconds)"
+My Estimate	US East (N. Virginia)		Amazon ElastiCache	0	3462.39	41548.68	USD	"Nodes (0), Instance type (cache.r6gd.12xlarge), Utilization (On-Demand only) (100 %Utilized/Month), Cache Engine (Redis), Cache Node Type (Memory optimized), Pricing strategy (OnDemand), Nodes (1), Instance type (cache.m6g.16xlarge), Utilization (On-Demand only) (100 %Utilized/Month), Cache Engine (Redis), Cache Node Type (Standard), Pricing strategy (OnDemand)"
+								
+"I will uprgrad EC2, RDS. Then, add ElastiCache & Gateway Load Balancer to increase performance"								
+								
+Acknowledgement								
+"* AWS Pricing Calculator provides only an estimate of your AWS fees and doesn't include any taxes that might apply. Your actual fees depend on a variety of factors, including your actual usage of AWS services."								
